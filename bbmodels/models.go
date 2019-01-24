@@ -1,7 +1,7 @@
 package bbmodels
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func init() {
@@ -10,6 +10,6 @@ func init() {
 }
 // dummy function to show usage of package compilation
 func NoOp() {
-    i := "no-op success"
-    fmt.Println("bbmodels: " + i)        
+	i := "no-op success"
+	fmt.Println("bbmodels: " + i)
 }

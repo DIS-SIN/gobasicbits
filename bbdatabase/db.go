@@ -13,7 +13,7 @@ func init() {
 // dummy function to show usage of package compilation
 func NoOp() {
     i := "no-op success"
-    fmt.Println("bbdatabase: " + i)        
+    fmt.Println("bbdatabase: " + i)
 }
 
 type User struct {

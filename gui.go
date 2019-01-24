@@ -81,23 +81,23 @@ func isInString(s []string, t string) bool {
 
 var templates *template.Template
 func InitalizeGuiTemplates() {
-    var allFiles []string
-    files, err := ioutil.ReadDir("./bbtemplates")
-    if err != nil {
-        fmt.Println(err)
-    }
-    for _, file := range files {
-        filename := file.Name()
-        if strings.HasSuffix(filename, ".tmpl") {
-            allFiles = append(allFiles, "./bbtemplates/"+filename)
-        }
-    }
+	var allFiles []string
+	files, err := ioutil.ReadDir("./bbtemplates")
+	if err != nil {
+		fmt.Println(err)
+	}
+	for _, file := range files {
+		filename := file.Name()
+		if strings.HasSuffix(filename, ".tmpl") {
+			allFiles = append(allFiles, "./bbtemplates/"+filename)
+		}
+	}
 	templates, err = template.ParseFiles(allFiles...) //parses all .tmpl files in the 'templates' folder
 }
 
 func RenderRoute(w http.ResponseWriter, data interface{}) {
 	t := templates.Lookup("base.html.tmpl")
 	if err := t.ExecuteTemplate(w, "base", data); err != nil {
-        log.Printf("Failed to execute template: %v", err)
-    }	
+		log.Printf("Failed to execute template: %v", err)
+	}	
 }

@@ -77,8 +77,8 @@ func CreateRouter(port string) {
 	decoder  := schema.NewDecoder()
 	decoder.IgnoreUnknownKeys(true)
 	r := mux.NewRouter()	
-   
-    r.HandleFunc("/", IndexHandler)
+
+	r.HandleFunc("/", IndexHandler)
 	r.HandleFunc("/guide/{q}", GuideHandler)
 	r.HandleFunc("/search", SearchHandler)
 	r.HandleFunc("/api", RedirectHandler)	
