@@ -1,0 +1,86 @@
+{{ define "tmplguide" }}
+<div class="container" id="basicbits_help" style="display: none;">
+    <div>
+        <span class="h2">basicbits/</span>
+        <span class="h3"> A Go Web App</span>
+        <p class="h4">Help Guide</p>
+        <div id="help_guide_gi" class="help_guide">
+            <p class="h5">General Information</p>
+            <p>
+                basicbits is a basic Go web app, with a few spicy goodies thrown in. It's an experiment
+                by on what is possible with disruptive technology and agile practices. 
+            </p>
+            <p>
+                Here's a widget I've pulled in from a template
+            </p>
+            {{ template "wgtserverstatus" .}}
+            {{ template "wgtuserstatus" .}}
+            <p>
+                Explore more content in the options below.
+            </p>
+        </div>
+        <div id="help_guide_sw" class="help_guide">
+            <p class="h5">How to speak basicbits</p>
+            <p>
+                Just open all of these. Go is so different from how you're used to building pages.
+            </p>
+            <ul>
+            <li><a href="https://golang.org/doc/code.html">Useful go link</a></li>
+            <li><a href="https://golang.org/doc/articles/wiki/">Useful go link</a></li>
+            <li><a href="https://forum.golangbridge.org/t/serving-css-files/2386/7">Useful go link</a></li>
+            <li><a href="https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet">Useful go link</a></li>
+            <li><a href="https://stackoverflow.com/questions/15407719/in-gos-http-package-how-do-i-get-the-query-string-on-a-post-request">Useful go link</a></li>
+            <li><a href="https://stackoverflow.com/questions/28745161/with-golang-webserver-where-does-the-root-of-the-website-map-onto-the-filesystem/28745280#28745280">Useful go link</a></li>
+            <li><a href="https://stackoverflow.com/questions/28899675/include-js-file-in-go-template/28899786#28899786">Useful go link</a></li>
+            <li><a href="https://stackoverflow.com/questions/33027070/variables-inside-templates-in-golang">Useful go link</a></li>
+            <li><a href="https://stackoverflow.com/questions/23925005/function-declaration-in-golang">Useful go link</a></li>
+            <li><a href="http://www.gorillatoolkit.org/pkg/mux">Useful go link</a></li>
+            <li><a href="https://www.ardanlabs.com/blog/2014/03/exportedunexported-identifiers-in-go.html">Useful go link</a></li>
+            <li><a href="https://www.reddit.com/r/golang/comments/29ay5j/rookie_how_do_i_organize_my_code_into_multiple/">Useful go link</a></li>
+            <li><a href="https://www.reddit.com/r/golang/comments/1f8ue5/web_app_code_layoutorganization/">Useful go link</a></li>
+            <li><a href="https://medium.com/golangspec/init-functions-in-go-eac191b3860a">Useful go link</a></li>
+            <li><a href="https://golang.org/doc/effective_go.html">Useful go link</a></li>
+            </ul>
+        </div>
+        <div id="help_guide_lm" class="help_guide">
+            <p class="h5">Limitations / Bugs</p>
+            <p>
+                More guide content here. Modify to your will
+            </p>
+            <p>
+                We hope basicbits is actually helpful.
+            </p>
+        </div>
+        <div id="help_guide_ex" class="help_guide">
+            <p class="h5">Examples</p>
+            <p>
+                More guide content. Just add what you need and connect the buttons wih js and the ids
+            </p>
+            <ul>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <hr style="color:#ddd;background:#ddd;"/>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <hr style="color:#ddd;background:#ddd;"/>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <li>List item hooray</li>
+                <hr style="color:#ddd;background:#ddd;"/>
+            </ul>
+        </div>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a id="b_help_guide_gi" href="#top"><span class="mif-home icon"></span>General Information</a></li>
+        <li><a id="b_help_guide_sw" href="#top"><span class="mif-books icon"></span>How to speak basicbits</a></li>
+        <li><a id="b_help_guide_ex" href="#top"><span class="mif-files-empty icon"></span>Examples</a></li>
+        <li><a id="b_help_guide_lm" href="#top"><span class="mif-files-empty icon"></span>Limitations/Bugs</a></li>
+        <li class="divider"></li>
+        <li><a href="https://github.com/DIS-SIN/basicbits"><span class="mif-github icon"></span>Github Source Code</a></li>
+        <li class="divider"></li>
+        <li><a id="basicbits_help_dismiss"><span class="mif-help icon"></span>Close Help Guide</a></li>
+    </ul>
+</div>
+{{end}}

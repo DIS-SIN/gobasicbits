@@ -1,0 +1,44 @@
+{{define "tmplsearchcontrol"}}
+<div class="container" style="background: rgb(51,80,117);padding:1.3em;">
+    <div class="container" style="color:#afafaf;padding-bottom: 1em;">
+        <div class="row" style="padding: 1em;padding-top: 0.2em;">
+            <div class="ell-md-full cell-lg-7">
+                <span class="mif-multitrack-audio"></span><span id="basicbits_listening_for">basicbits is listening in English<br><small>[Note: This is a note]</small></span></li>
+
+            </div>
+            <div class="cell-md-full cell-lg-5">
+                <ul class="h-menu">
+                    <li class="cell-md-full cell-lg-6"><a href="#" id="speech_icon_yes_tlx">
+                        <small><span class="mif-sync-problem"></span>Enable Translate</small>
+                    </a></li> 
+                    <li class="cell-md-full cell-lg-6"><a href="#" id="speech_icon_no_tlx">
+                        <small><span class="mif-sync-disabled"></span>Disable Translate</small>
+                    </a></li>
+                </ul>
+                <span class="cell-md-full cell-lg-6"></span>
+            </div>
+        </div>
+    </div>
+    <form class="container" id="basicbitsfrm" method="get" action="/search" style="padding-bottom:1.3em;">
+        <div class="speech">
+            <input type="hidden" id="recognition_language" name="recognition_language" value="en-US" />
+            <input type="hidden" id="recognition_lang_tlxd" name="recognition_lang_tlxd" value="disabled" />
+            <input 
+                type="text" 
+                name="basicbits_ask" 
+                id="transcript" 
+                placeholder="Try something like 'why should I care about digital'" 
+                value="{{ .Title }}" 
+            />            
+        </div>
+    </form>
+    <ul class="h-menu"  class="cell-sm-full" >
+        <li class="cell-md-full cell-lg-2"><a href="#" id="speech_icon"><span class="mif-mic"></span> Say Question!</a></li>
+        <li class="cell-md-full cell-lg-2"><a href="#" id="send_text"><span class="mif-pencil"></span> Send Text!</a></li>
+        <li class="cell-md-full cell-lg-2"><a href="#" id="clear_text"><span class="mif-blocked"></span> Clear Search</a></li>
+        <li class="cell-md-full cell-lg-2"><a href="#" id="talk_back"><span class="mif-volume-medium"></span> basicbits, Read!</a></li> 
+        <li class="cell-md-full cell-lg-2"><a href="#" id="dont_talk_back"><span class="mif-volume-mute2"></span> basicbits, Shh!</a></li> 
+        <li class="cell-md-full cell-lg-2"><a href="#" id="basicbits_help_open"><span class="mif-help"></span> Help</a></li>
+    </ul>
+</div>
+{{end}}

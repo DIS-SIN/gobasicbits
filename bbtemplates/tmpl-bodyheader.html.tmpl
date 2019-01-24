@@ -1,0 +1,28 @@
+{{ define "tmplbodyheader" }}
+<div class="container" style="margin-bottom-bottom: -0.5em;">
+    <div class="row">
+        <div class="cell-md-full cell-lg-4">
+            <h1 style="padding:0.3em;">
+                <a class="splash_link" href="/"><strong>alpha</strong></a> | basicbits
+                <span><strong>
+                    {{.Title}}
+                </strong></span>
+                <a id="top" name="top"></a>
+            </h1>
+        </div>
+        <div class="cell-md-full cell-lg-8">
+            <div class="row">
+                <ul class="h-menu">
+                    <li class="cell-md-full cell-lg-6"><a href="#" class="cell-sm" id="speech_icon_en"><span class="mif-multitrack-audio"></span> English</a></li> 
+                    <li class="cell-md-full cell-lg-6"><a href="#" id="speech_icon_fr"><span class="mif-multitrack-audio"></span> Français</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-none-sm d-none-md d-block-lg">
+                <div class="row"  style="padding: 1em;">
+                    <span id="tlx_msg"><small>A small note on the page that disappears on small screens</small></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

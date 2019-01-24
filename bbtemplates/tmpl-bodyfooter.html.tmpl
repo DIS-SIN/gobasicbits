@@ -1,0 +1,22 @@
+{{ define "tmplbodyfooter"}}
+<footer>
+    <div class="remark primary cell-12" style="background: rgb(225,228,231);padding-bottom: 3em;">
+        <span id="q_asked" style="color:white;">{{.Title}}</span>
+        <div id="basicbits_console" style="display: none;">
+            <p class="fg-gray"><span class="mif-calculator2"></span> basicbits Console</p>
+            <span class="mif-bubbles"></span> Answer (basicbits Picked):<pre>{{.Title}}</pre>
+            <span class="mif-settings-ethernet"></span> Understanding (AI Framework) Reply:<pre>{{.Title}}</pre>
+            <span class="mif-flow-tree"></span> basicbits Knows (All Answers):<pre>{{.Title}}</pre>
+        </div>
+        <div id="toggle_basicbits_console">
+            <button class="button secondary"><span class="mif-file-code"></span> Toggle basicbits Console</button>
+        </div>
+        <p>
+            Want to see how we built the basicbits? Check out our <a href="https://github.com/DIS-SIN/gobasicbits">github repository for the code</a>. It's small, and we got it running in 24 hours.
+        </p>
+        <p>
+            basicbits knows about disruptive technology and how it matters to the Canadian government. 
+        </p>
+    </div>
+</footer>
+{{end}}
