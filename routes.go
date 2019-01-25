@@ -106,6 +106,9 @@ func CreateRouter(port string) {
 	r.PathPrefix("/js/").Handler(http.StripPrefix("/js/",
 		http.FileServer(http.Dir("bbstatic/js/"))))
 
+	r.PathPrefix("/images/").Handler(http.StripPrefix("/images/",
+		http.FileServer(http.Dir("bbstatic/images/"))))
+
 	fmt.Println("Starting webserver on port " + port)
 	http.Handle("/", r)
 
