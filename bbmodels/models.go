@@ -1,15 +1,15 @@
 package bbmodels
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func init() {
-	// we will use this later
-	fmt.Println("Init: Basic Models Initialized!")
+    // we will use this later
+    fmt.Println("Init: Basic Models Initialized!")
 }
 // dummy function to show usage of package compilation
 func NoOp() {
-	i := "no-op success"
-	fmt.Println("bbmodels: " + i)
+    i := "no-op success"
+    fmt.Println("bbmodels: " + i)
 }
